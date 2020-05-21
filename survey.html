@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" type="text/css">
+<html>
+  <meta charset="utf-8">
+<div class="container">
+  <h1 id="title">성향 설문조사</h1>
+  <h2 id="subtitle">본 페이지는 순수 css를 씀과 동시에 어떠한 framework를 쓰지 않았음.</h2>
+
+  <form class="survery-form">
+
+    <div class="form-group">
+      <label id="name-label" for="name">이름</label>
+      <input type="text" name="name" id="name" class="form-element" placeholder="이름을 넣어주세요" required />
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">이메일</label>
+      <input type="email" name="email" id="email" class="form-element" placeholder="이메일을 넣어주세요" required />
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">나이<span class="clue"> (선택)</span></label>
+      <input type="number" name="age" id="number" min="10" max="99" class="form-element" placeholder="나이를 넣어주세요" />
+    </div>
+
+    <div class="form-group">
+      <p>현재 위치는 무엇인가요?</p>
+      <select id="dropdown" class="form-element" name="role" required>
+        <option value="student">학생</option>
+        <option value="job">직장인</option>
+        <option value="freelancer">프리랜서</option>
+        <option value="artist">예술인</option>
+        <option value="soldier">군인</option>
+        <option value="other">기타</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>지금 위치에 만족하십니까?</p>
+      <label>
+        <input class="input-radio" type="radio" name="satisfy" value="definitely" checked />매우 그렇다
+      </label>
+      <label>
+        <input class="input-radio" type="radio" name="satisfy" value="no"  />아니다
+      </label>
+      <label>
+        <input class="input-radio" type="radio" name="satisfy" value="not-sure"  />모르겠다
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>당신은 무인도에 하나만 가져간다면 무엇을 가져가시겠습니까?</p>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="attractive" checked />원빈/김태희 같은 이상형
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="money"  />100억 상당의 돈과 보석
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="clothe"  />100벌의 원하는 옷
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="family" />가족
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="car"  />원하는 자동차
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="bible"  />성경책
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="weapon" />원하는 무기
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="house"  />현재 사는 집
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="computer"  />인터넷되는 컴퓨터(구조요청 불가)
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="water" />무한의 물
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="pet"  />애완동물
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="instrument"  />원하는 악기
+      </label>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">제출</button>
+    </div>
+
+  </form>
+</div>
+
+
+</html>
